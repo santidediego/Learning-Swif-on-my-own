@@ -59,3 +59,37 @@ var str2="The number is \(number)"
 str2="The number is \(number!)"
 
 
+//Classes and Structs
+
+class vehicle
+{
+    var identificate: Int
+    var model: String
+    
+    init (identificate: Int, model: String)
+    {
+        self.identificate=identificate
+        self.model=model
+    }
+}
+//Now we can define:
+
+class car: vehicle
+{
+    let seats: Int=4
+    //It´s the same init because seats is a constant
+    override init(identificate: Int, model: String)
+    {
+        super.init(identificate: identificate, model: model)
+    }
+}
+
+class ship: vehicle {
+    var seats: Int
+    init(identificate: Int, model: String, seats: Int) {
+        super.init(identificate: identificate, model: model)
+        self.seats=seats
+    }
+}
+
+
