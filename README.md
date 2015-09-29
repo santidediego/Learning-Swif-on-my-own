@@ -1,3 +1,3 @@
 #Learning Swift on my own
 ========================================
-In this repository i will show you some code of the new programming lenguaje Swift
+In this repository I will show you some code of the new programming languaje Swift
