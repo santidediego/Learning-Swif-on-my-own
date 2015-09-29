@@ -42,5 +42,20 @@ while my_array[0] != 6
 }
 my_array
 
+//Optionals
+
+//If we write ? we have a nil variable
+
+var number: Int?
+number
+
+number=4
+
+
+var str2="The number is \(number)"
+
+//We have to write ! in order to show the variable, because it´s an optional
+
+str2="The number is \(number!)"
 
 
