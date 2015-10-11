@@ -65,6 +65,7 @@ class vehicle
 {
     var identificate: Int
     var model: String
+    var km: Int=0
     
     init (identificate: Int, model: String)
     {
@@ -86,10 +87,28 @@ class car: vehicle
 
 class ship: vehicle {
     var seats: Int
-    init(identificate: Int, model: String, seats: Int) {
-        super.init(identificate: identificate, model: model)
+    init(identificate: Int, model: String, seats: Int)
+    {
         self.seats=seats
+        super.init(identificate: identificate, model: model)
     }
+}
+
+//Protocols
+
+protocol fix
+{
+    var damaged: Bool {get}
+}
+
+class plane: vehicle, fix
+{
+    var damaged : Bool
+        {
+            return super.km==100000
+        }
+    //In this case, the vehicle is damaged if it has 100000 km
+    let seats: Int=100
 }
 
 
